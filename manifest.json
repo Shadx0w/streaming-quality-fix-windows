@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Widevine EME Compatibility Shim",
+  "version": "1.0.0",
+  "description": "Aligns Chromium EME policy checks with Firefox behavior to resolve hardware-negotiation resolution caps.",
+  "content_scripts": [
+    {
+      "matches": ["https://*://*"],
+      "js": ["inject.js"],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": true
+    }
+  ]
+}
