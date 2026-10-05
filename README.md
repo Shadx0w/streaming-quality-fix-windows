@@ -45,7 +45,7 @@ This extension clears the artificial HDCP handshake barrier, allowing the player
   "description": "Aligns Chromium EME policy checks with Firefox behavior to resolve hardware-negotiation resolution caps.",
   "content_scripts": [
     {
-      "matches": ["https://*://*"],
+      "matches": ["https://www.disneyplus.com/"],
       "js": ["inject.js"],
       "run_at": "document_start",
       "world": "MAIN",
