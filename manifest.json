@@ -5,7 +5,7 @@
   "description": "Aligns Chromium EME policy checks with Firefox behavior to resolve hardware-negotiation resolution caps.",
   "content_scripts": [
     {
-      "matches": ["https://www.disneyplus.com/"],
+      "matches": ["https://www.disneyplus.com/*"],
       "js": ["inject.js"],
       "run_at": "document_start",
       "world": "MAIN",
